@@ -58,6 +58,7 @@ function navButton1() {
 
     sec1.style.display = "unset";
     sec2.style.display = "none";
+    menuClose();
 }
 
 function navButton2() {
@@ -66,7 +67,17 @@ function navButton2() {
 
     sec1.style.display = "none";
     sec2.style.display = "unset";
+    menuClose();
 }
+
+function navButton3 () {
+    menuClose();
+}
+
+function navButton4 () {
+    menuClose();
+}
+
 function displayTime(){
     let dateTime = new Date();
     let hrs = dateTime.getHours();
@@ -98,7 +109,6 @@ setInterval(displayTime, 10);
 
 function menuOpen() {
     const nav1= document.getElementById("nav");
-    const main = document.getElementById("main");
     const ham1 = document.getElementById("ham1");
     const ham2 = document.getElementById("ham2");
     let navButton1 = document.getElementById("span1");
@@ -108,6 +118,7 @@ function menuOpen() {
     let navButton5 = document.getElementById("span5");
 
     nav1.style.width = "250px";
+    nav1.style.boxShadow = "0 5px 10px black";
 
     ham1.style.display = "none";
     ham2.style.display = "unset";
@@ -118,12 +129,10 @@ function menuOpen() {
     navButton4.style.opacity = "1";
     navButton5.style.opacity = "1";
 
-    main.style.marginLeft = "250px";
 }
 
 function menuClose() {
     let nav1= document.getElementById("nav");
-    let main = document.getElementById("main");
     let ham1 = document.getElementById("ham1");
     let ham2 = document.getElementById("ham2");
     let navButton1 = document.getElementById("span1");
@@ -133,6 +142,7 @@ function menuClose() {
     let navButton5 = document.getElementById("span5");
 
     nav1.style.width = "60px";
+    nav1.style.boxShadow = "none";
 
     ham1.style.display = "unset";
     ham2.style.display = "none";
@@ -143,5 +153,4 @@ function menuClose() {
     navButton4.style.opacity = "0";
     navButton5.style.opacity = "0";
 
-    main.style.marginLeft = "60px";
 }

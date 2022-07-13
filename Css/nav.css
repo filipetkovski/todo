@@ -12,6 +12,8 @@ nav {
     border-right: 1px solid gray;
 
     background-color: #e7e7e7;
+
+    z-index: 100;
 }
 
 #ham2 {
@@ -46,6 +48,11 @@ nav button {
     flex-direction: row;
     align-items: center;
     margin-bottom: 5px;
+    color: black;
+}
+
+.navImg {
+    width: 15px;
 }
 
 nav button:last-of-type {
@@ -61,10 +68,10 @@ nav button:last-of-type:hover{
 }
 
 nav button:hover {
-    background-color: #505050;
+    background-color: #969696;
     color: white;
 }
 
-.nav-button2, .nav-button4 {
+.nav-button2, .nav-button4, .nav-button1, .nav-button3 {
     padding-left: 22px;
 }
