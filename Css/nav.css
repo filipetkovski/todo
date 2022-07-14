@@ -16,12 +16,8 @@ nav {
     z-index: 100;
 }
 
-#ham2 {
-    display: none;
-}
-
 nav span {
-    opacity: 0;
+    font-size: 0;
     margin-left: 10px;
     pointer-events: none;
 }
@@ -38,7 +34,6 @@ nav button {
     font-size: 1em;
     border: 0;
     width: 98%;
-    background-color: transparent;
     text-align: left;
     cursor: pointer;
     transition: 0.5s;
@@ -49,6 +44,7 @@ nav button {
     align-items: center;
     margin-bottom: 5px;
     color: black;
+    background-color: #dadada;
 }
 
 .navImg {
@@ -56,11 +52,7 @@ nav button {
 }
 
 nav button:last-of-type {
-    font-size: 1.5em;
-}
-
-#span5 {
-    font-size: 0.8em;
+    font-size: 1em;
 }
 
 nav button:last-of-type:hover{
@@ -72,6 +64,20 @@ nav button:hover {
     color: white;
 }
 
-.nav-button2, .nav-button4, .nav-button1, .nav-button3 {
+.nav-button2, .nav-button4, .nav-button1, .nav-button3, .nav-button5  {
     padding-left: 22px;
+}
+#span5 {
+    font-size: 0;
+}
+
+
+@media  (max-width: 450px) {
+    nav button {
+        font-weight: bold;
+    }
+
+    nav button:hover {
+        color: black;
+    }
 }
