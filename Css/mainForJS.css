@@ -1,10 +1,10 @@
 #addTasks {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
 }
 
 .taskBody {
-    background-color: #b7b7b7;
+    background-color: lightblue;
     padding: 10px 20px;
     margin-bottom: 5px;
     display: flex;
@@ -15,11 +15,12 @@
 }
 
 .taskBody:hover {
-    background-color: #969696;
+    box-shadow: 1px 1px 5px black;
 }
 
 .taskBody__text {
-    font-size: 1.3em;
+    color: #3b3b3b;
+    font-size: 1.1em;
     margin-left: 10px;
 }
 
@@ -32,15 +33,14 @@
 
 .taskBody__button {
     border: none;
-    border-radius: 7.5px;
-    width: 15px;
-    height: 15px;
-    margin: 4px 0;
+    padding: 0;
+    background-image: url(../Images/dote.png);
+    background-size: cover;
+    border-radius: 12.5px;
+    width: 25px;
+    height: 25px;
+    background-color: transparent;
     cursor: pointer;
-}
-
-.taskBody__button:hover {
-    background-color: green;
 }
 
 .taskBody__date {
@@ -73,7 +73,7 @@
     background-color: #3b3b3b;
 }
 
-.completed {
+.completed, .completed1, .completed2, .completed3 {
     display: none;
     font-size: 1.2em;
     padding-left: 5px;
@@ -92,8 +92,12 @@
         font-size: 1.1em;
     }
     .taskBody__button {
-        width: 15px;
-        height: 15px;
         margin: 2px;
+    }
+    .taskBody:hover {
+        box-shadow: none;
+    }
+    .taskBody {
+        padding: 10px 15px;
     }
 }
