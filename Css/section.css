@@ -49,6 +49,7 @@ section {
 }
 
 .addTask {
+    color: black;
     padding: 5px;
     background-color: lightcoral;
     border: none;
