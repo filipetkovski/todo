@@ -38,7 +38,10 @@ window.addEventListener("load", () => {
     });
 
     nav.addEventListener("mouseenter", () => {
-        menuOpen();
+        let wid = outerWidth;
+        if(wid === 450) {
+            menuOpen();
+        }
     });
 });
 

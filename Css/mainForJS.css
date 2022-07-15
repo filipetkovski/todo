@@ -67,6 +67,7 @@
     background-color: #505050;
     color: white;
     cursor: pointer;
+    user-select: none;
 }
 
 .taskBody__delete-button:hover {
